@@ -60,7 +60,6 @@ public class Heroe extends Personaje implements IHeroe {
         System.out.println("tipo de poder: " + tipoDePoder);
         System.out.println("antiguedad: " + calcularAntiguedad());
         System.out.println("equipo: " + equipo);
-        System.out.println("");
     }
 
     private static List<Heroe> listaHeroes = new ArrayList<>();
@@ -82,9 +81,9 @@ public class Heroe extends Personaje implements IHeroe {
     }
 
     @Override
-    public Heroe obtenerPorId(int id) {
+    public Heroe obtenerPorId(int idHeroe) {
         for (Heroe heroes : listaHeroes){
-            if (heroes.getIdPersonaje() == id){
+            if (heroes.getIdPersonaje() == idHeroe){
                 return heroes;
             }
         }

@@ -71,11 +71,11 @@ public abstract class Personaje {
     }
 
     public String getAliasCompleto(){
-        return "nombre: " + nombrePersonaje + "alias: " + aliasPersonaje;
+        return "nombre: " + nombrePersonaje + " alias: " + aliasPersonaje;
     }
 
     public int calcularAntiguedad(){
-        return anioCreacion - 2026;
+        return 2026 - anioCreacion ;
     }
 
     public abstract void mostrarPerfil();
