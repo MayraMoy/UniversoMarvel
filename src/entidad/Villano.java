@@ -61,7 +61,7 @@ public class Villano extends Personaje implements IVillano {
         System.out.println("id: " + idPersonaje);
         System.out.println("nombre: " + getAliasCompleto());
         System.out.println("tipo de poder: " + tipoDePoder);
-        System.out.println("antiguedad: " + calcularAntiguedad());
+        System.out.println("antiguedad: " + calcularAntiguedad() + " años");
         System.out.println("plan malvado: " + planMalvado);
     }
 
@@ -71,7 +71,6 @@ public class Villano extends Personaje implements IVillano {
     public void guardar(Villano villano){
         if (villano != null ){
             listaVillanos.add(villano);
-            System.out.println("guardando villano...");
         }
         else{
             System.out.println("complete todos los datos");

@@ -25,6 +25,9 @@ import entidad.Heroe;
 import entidad.Pelicula;
 import entidad.Villano;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -128,6 +131,72 @@ public class Main {
 
         for(Heroe heroe : heroeServicio.obtenerTodos()){
             heroe.mostrarPerfil();
+        }
+
+        List<Heroe> theAvengers = new ArrayList<>();
+        theAvengers.add(heroeServicio.obtenerPorId(4));
+        theAvengers.add(heroeServicio.obtenerPorId(5));
+        theAvengers.add(heroeServicio.obtenerPorId(7));
+
+        List<Heroe> ageOfUltron = new ArrayList<>();
+        ageOfUltron.add(heroeServicio.obtenerPorId(8));
+        ageOfUltron.add(heroeServicio.obtenerPorId(9));
+        ageOfUltron.add(heroeServicio.obtenerPorId(4));
+
+        List<Heroe> infinityWar = new ArrayList<>();
+        infinityWar.add(heroeServicio.obtenerPorId(6));
+        infinityWar.add(heroeServicio.obtenerPorId(4));
+        infinityWar.add(heroeServicio.obtenerPorId(5));
+
+        Pelicula theAvengerss = new Pelicula(
+                1,
+                "The Avengers",
+                "Saga del Infinito",
+                2012,
+                142,
+                "El director de la Agencia SHIELD decide reclutar a un equipo para salvar al mundo de un desastre casi seguro cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial.",
+                loki,
+                theAvengers
+        );
+        peliculaServicio.guardar(theAvengerss);
+
+        Pelicula ageOfUltronn = new Pelicula(
+                2,
+                "Age Of Ultron",
+                "Saga del Infinito",
+                2015,
+                141,
+                "Los Vengadores se reúnen de nuevo y juntan sus fuerzas con las de los recién llegados Quicksilver y Bruja Escarlata para luchar contra un robot maquiavélico llamado Ultrón, el cual Tony Stark creó con el fin de defender la paz, pero resultó defectuoso y ahora pretende exterminar a toda la humanidad.",
+                ultron,
+                ageOfUltron
+        );
+        peliculaServicio.guardar(ageOfUltronn);
+
+        Pelicula infinityWarr = new Pelicula(
+                3,
+                "Infinity War",
+                "Saga del Infinito",
+                2018,
+                156,
+                "Los superhéroes se alían para vencer al poderoso Thanos, el peor enemigo al que se han enfrentado. Si Thanos logra reunir las seis gemas del infinito: poder, tiempo, alma, realidad, mente y espacio, nadie podrá detenerlo.",
+                thanos,
+                infinityWar
+
+        );
+        peliculaServicio.guardar(infinityWarr);
+
+        for(Pelicula pelicula : peliculaServicio.obtenerTodos()){
+            pelicula.mostrarFicha();
+        }
+
+        Pelicula buscarPelicula = peliculaServicio.obtenerPorId(3);
+        buscarPelicula.mostrarFicha();
+
+
+        peliculaServicio.eliminar(1);
+
+        for(Pelicula pelicula : peliculaServicio.obtenerTodos()){
+            pelicula.mostrarFicha();
         }
     }
 }

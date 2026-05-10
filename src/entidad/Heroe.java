@@ -58,7 +58,7 @@ public class Heroe extends Personaje implements IHeroe {
         System.out.println("id: " + idPersonaje);
         System.out.println("nombre: " + getAliasCompleto());
         System.out.println("tipo de poder: " + tipoDePoder);
-        System.out.println("antiguedad: " + calcularAntiguedad());
+        System.out.println("antiguedad: " + calcularAntiguedad() + " años");
         System.out.println("equipo: " + equipo);
     }
 
@@ -68,7 +68,6 @@ public class Heroe extends Personaje implements IHeroe {
     public void guardar(Heroe heroe){
         if (heroe != null){
             listaHeroes.add(heroe);
-            System.out.println("guardando heroe...");
         }
         else {
             System.out.println("complete todos los datos");

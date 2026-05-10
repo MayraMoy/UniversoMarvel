@@ -163,9 +163,10 @@ public class Pelicula implements IPelicula {
         }
 
         if(esClasica()){
-            System.out.println("Si");
+            System.out.println("");
+            System.out.println("Si es una pelicula clasica");
         } else {
-            System.out.println("No");
+            System.out.println("No es una pelicula clasica");
         }
     }
 
@@ -175,7 +176,6 @@ public class Pelicula implements IPelicula {
     public void guardar(Pelicula pelicula){
         if (pelicula != null){
             listaPeliculas.add(pelicula);
-            System.out.println("pelicula guardada...");
         }
         else {
             System.out.println("complete todos los datos");
