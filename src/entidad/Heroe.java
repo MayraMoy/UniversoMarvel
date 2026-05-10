@@ -10,7 +10,7 @@ import java.util.List;
     dado que aún no está creada la interfaz).
 
     - Atributos: equipo que será de tipo String (ej: "Avengers", "X-Men", "Guardianes de la Galaxia").
-
+        Mayra Moyano
     - Métodos:
             - Propios: Constructores: uno vacío y otro con parámetros. Recordá que está heredando de Personaje. Getter y Setter de equipo.
             - De la clase Padre: Sobreescribir los métodos getAliasCompleto() y calcularAntiguedad(). Recordar el uso de la
@@ -54,6 +54,7 @@ public class Heroe extends Personaje implements IHeroe {
     @Override
     public void mostrarPerfil(){
         System.out.println("");
+        /*System.out.println("Mayra Moyano");*/
         System.out.println("---- Planilla de Personajes Heroes ----");
         System.out.println("id: " + idPersonaje);
         System.out.println("nombre: " + getAliasCompleto());

@@ -115,6 +115,8 @@ public class Main {
         );
         heroeServicio.guardar(viudaNegra);
 
+        /*System.out.println("Mayra Moyano");*/
+
         Heroe hulk = new Heroe(
                 9,
                 "Robert Bruce Banner",
@@ -198,5 +200,6 @@ public class Main {
         for(Pelicula pelicula : peliculaServicio.obtenerTodos()){
             pelicula.mostrarFicha();
         }
+
     }
 }

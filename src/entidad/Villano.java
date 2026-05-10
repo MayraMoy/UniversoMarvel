@@ -16,7 +16,7 @@ b. De la clase Padre: Sobreescribir los metodos de la clase Padre: getAliasCompl
 c. De la Interfaz: una vez que armes la interfaz IVillano, implementás los siguientes métodos:
 Nota: Primero crear una lista de tipo Villano que va a simular una base de datos en local.
         - guardar() que agrega el villano a la lista (validando que no sea null).
-        - obtenerTodos() que retorna la lista completa.
+        - obtenerTodos() que retorna la lista completa. Mayra Moyano
         - obtenerPorId() que busca por id con un for, retorna null si no encuentra.
 */
 

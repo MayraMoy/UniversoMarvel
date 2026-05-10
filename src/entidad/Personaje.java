@@ -65,7 +65,7 @@ public abstract class Personaje {
     public int getAnioCreacion() {
         return anioCreacion;
     }
-
+    /*System.out.println("Mayra Moyano");*/
     public void setAnioCreacion(int anioCreacion) {
         this.anioCreacion = anioCreacion;
     }

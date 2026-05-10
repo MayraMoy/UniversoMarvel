@@ -7,7 +7,7 @@ import java.util.List;
 /*
 Crear la interfaz IPelicula en el paquete interfaz con el siguiente contrato:
 - Un procedimiento, llamado guardar, que no retorna nada y recibe como parámetro un objeto de tipo Pelicula.
-- Un metodo que retorna una List de tipo Pelicula, llamado obtenerTodos().
+- Un metodo que retorna una List de tipo Pelicula, llamado obtenerTodos(). Mayra Moyano
 - Un metodo que retorna un objeto de tipo Pelicula, llamado obtenerPorId, que debe recibir por parámetro un int idPelicula.
 - Un procedimiento, que no retorna nada, llamado eliminar y que recibe como parámetro un int idPelicula.
 */

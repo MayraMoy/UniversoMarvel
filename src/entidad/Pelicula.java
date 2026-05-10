@@ -20,7 +20,7 @@ Atributos:
 Métodos:
 a. Métodos Propios: Constructores: uno vacío y otro con parámetros. Getter y Setter de todos los atributos.
                     - calcularAntiguedad() que debe retornar la diferencia entre el año actual y anioEstreno.
-                    - esClasica() que debe retornar true si la antigüedad es mayor o igual a 10 años (retorno de tipo boolean).
+                    - esClasica() que (Mayra Moyano) debe retornar true si la antigüedad es mayor o igual a 10 años (retorno de tipo boolean).
                     - mostrarFicha() que no retorna nada e imprime todos los datos de la película, el alias completo del villano y
                     recorre la lista de héroes mostrando el alias completo de cada uno.
 
